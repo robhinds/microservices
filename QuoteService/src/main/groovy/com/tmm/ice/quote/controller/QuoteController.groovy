@@ -14,16 +14,7 @@ class QuoteController {
 		//look up from mongo DB
 	}
 	
-	public Map saveQuote( Map quote ){
-		//save json blob to mongo
-	}
-	
-	public Map validateQuote( Map productSchemeMetadata, Map quote ){
-		//validate the incoming quote against the metadata
-		[:]
-	}
-	
-	@RequestMapping( value="/premium", method=RequestMethod.GET )
+	@RequestMapping( value="/premium", method=RequestMethod.POST )
 	public Map calculateQuote( @RequestParam("productSchemeMetadata") Map productSchemeMetadata, @RequestParam("quote") Map quote ){
 		//calculate the premium for the incoming quote using the metadata
 		[premium: 575.85]
