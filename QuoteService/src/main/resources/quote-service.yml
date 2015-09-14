@@ -12,3 +12,8 @@ eureka:
 # HTTP Server
 server:
   port: 2222   # HTTP (Tomcat) port
+
+
+# service name bindings
+productService:
+  url: product-service
