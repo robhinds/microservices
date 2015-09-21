@@ -34,7 +34,7 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.cloud:spring-cloud-starter")
 	compile("org.springframework.cloud:spring-cloud-starter-eureka-server")
-    //compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("org.codehaus.groovy:groovy")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
