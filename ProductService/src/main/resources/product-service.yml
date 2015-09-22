@@ -2,6 +2,14 @@
 spring:
   application:
      name: product-service
+  datasource:
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ice-product
+  jpa:
+    hibernate:
+      ddl-auto: update
 
 # Discovery Server Access
 eureka:
