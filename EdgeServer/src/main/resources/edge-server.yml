@@ -1,0 +1,20 @@
+# Configure the routing
+info:
+  component: Zuul server
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+    
+zuul:
+  routes:
+    quote-service: /quote/**
+    product-service: /product/**
+
+server:
+  port: 8765   # HTTP (Tomcat) port
+  
