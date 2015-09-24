@@ -11,8 +11,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 @SpringBootApplication
 class QuoteServiceApplication {
 
-    static void main(String[] args) {
+	static void main(String[] args) {
 		System.setProperty("spring.config.name", "quote-service");
-        SpringApplication.run QuoteServiceApplication, args
+		SpringApplication.run QuoteServiceApplication, args
     }
 }
